@@ -1,0 +1,26 @@
+{
+	"height": 30,
+	"modules-center": ["custom/clock"],
+	"modules-right": ["sway/language", "custom/pipewire"],
+
+	"custom/clock": {
+		"format": "{}",
+		"tooltip": false,
+		"interval": 1,
+		"exec": "date '+%a, %d %B %H:%M'"
+	},
+
+	"sway/language": {
+		"format": "  {}",
+		"tooltip": false,
+	},
+
+	"custom/pipewire": {
+		"format": "{}",
+		"tooltip": false,
+        "exec": "~/.config/waybar/modules/pipewire.sh",
+        "signal": 8,
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01+ --limit 1.0",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01-"
+	}
+}

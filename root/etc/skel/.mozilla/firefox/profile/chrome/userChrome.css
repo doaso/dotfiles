@@ -1,0 +1,81 @@
+#toolbar-menubar,
+#PersonalToolbar,
+#PanelUI-button, 
+#back-button,
+#forward-button,
+#stop-reload-button,
+#identity-permission-box,
+#star-button-box,
+#identity-icon-box,
+#picture-in-picture-button,
+#tracking-protection-icon-container,
+#reader-mode-button,
+#translations-button,
+#urlbar .search-one-offs,
+#alltabs-button,
+#save-to-pocket-button,
+#fxa-toolbar-menu-button,
+#firefox-view-button,
+#alltabs-button,
+.titlebar-buttonbox-container,
+#urlbar-search-button {
+    display: none !important;
+}
+
+#urlbar-background {
+    border: none !important;
+    outline: none !important;
+    transition: .15s !important;
+    box-shadow: none !important;
+}
+
+#urlbar:not(:hover):not([breakout][breakout-extend]) > #urlbar-background {
+    background: #0000 !important;
+}
+
+#navigator-toolbox {
+    border: none !important
+}
+
+#navigator-toolbox-background:-moz-window-inactive {
+    filter: contrast(90%)
+}
+
+:root {
+    --tab-border-radius: 6px !important;
+    --NavbarWidth: 43;
+    --TabsHeight: 36;
+    --TabsBorder: 8;
+}
+
+#nav-bar {
+    background-color: #0000 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    margin-left: 3px;
+    vertical-align: center !important;
+    height: calc(var(--TabsHeight) * 1px + var(--TabsBorder) * 1px);
+    margin-top: calc(var(--TabsHeight) * -1px - var(--TabsBorder) * 1px) !important;
+    margin-right: calc(100vw - calc(var(--NavbarWidth) * 1vw)) !important;
+}
+
+#TabsToolbar {
+    margin-left: calc(var(--NavbarWidth) * 1vw) !important;
+}
+
+#urlbar-container {
+    min-width: 0px !important;
+    flex: auto !important;
+}
+
+toolbarspring {
+    display: none !important;
+}
+
+.tab-background, .tab-stack {
+    min-height: calc(var(--TabsHeight) * 1px) !important;
+}
+
+#TabsToolbar, #nav-bar {
+    transition: margin-top .25s !important;
+}
