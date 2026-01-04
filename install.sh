@@ -18,7 +18,8 @@ cp --recursive ./root/* /mnt/
 arch-chroot /mnt << EOF
 emerge-webrsync
 emerge --sync
-emerge --quiet --update --newuse @world
+emerge --quiet --verbose --update --deep --changed-use @world
+emerge --depclean
 rc-update add elogind boot
 emerge --quiet sys-devel/gcc
 emerge --quiet dev-lang/rust-bin
