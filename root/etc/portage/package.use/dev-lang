@@ -1,1 +1,1 @@
-dev-lang/rust rust-analyzer rust-src
+dev-lang/rust-bin rust-src rust-analyzer
