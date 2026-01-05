@@ -1,8 +1,0 @@
-LDFLAGS="-Wl,as-needed, -Wl,-O2"
-
-CC="gcc"
-CXX="g++"
-CPP="gcc -E"
-AR="ar"
-NM="nm"
-RANLIB="ranlib"
