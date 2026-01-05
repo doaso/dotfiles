@@ -18,8 +18,7 @@ cp --recursive ./root/* /mnt/
 arch-chroot /mnt << EOF
 emerge-webrsync
 emerge --sync
-emerge --quiet --verbose --update --deep --changed-use @world
-emerge --depclean
+emerge --quiet --update --newuse @world
 rc-update add elogind boot
 emerge --quiet sys-devel/gcc
 emerge --quiet dev-lang/rust-bin
@@ -56,4 +55,5 @@ emerge --quiet gui-apps/waybar
 emerge --quiet gui-apps/foot
 emerge --quiet gui-apps/grim
 emerge --quiet www-client/firefox
+emerge --depclean
 EOF
