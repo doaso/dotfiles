@@ -4,8 +4,8 @@ output * bg /usr/share/backgrounds/sway/og_tokyo.png fill
 output DP-1 resolution 1920x1080@144Hz position 1920,0
 
 input type:keyboard {
-	xkb_layout "us,ru"
-	xkb_options grp:win_space_toggle
+    xkb_layout "us,ru"
+    xkb_options grp:win_space_toggle
 }
 
 seat seat0 xcursor_theme "EllenJoe"

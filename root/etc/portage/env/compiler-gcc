@@ -1,0 +1,10 @@
+CFLAGS="-march=znver3 -mshstk -O3 -pipe"
+CXXFLAGS="${CFLAGS}"
+LDFLAGS="-Wl,--as-needed"
+
+CC="gcc"
+CXX="g++"
+CPP="gcc -E"
+AR="ar"
+NM="nm"
+RANLIB="ranlib"
